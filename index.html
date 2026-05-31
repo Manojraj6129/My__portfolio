@@ -92,12 +92,24 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
-  .nav-logo {
+.nav-logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem; font-weight:700; letter-spacing:1px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
     color: var(--accent);
     text-shadow: 0 0 20px rgba(0,212,170,0.4);
-  }
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
   .nav-links { display:flex; gap:36px; }
   .nav-links a {
     font-family: 'DM Mono', monospace; font-size:0.72rem;
@@ -443,7 +455,9 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">M.R.A</div>
+  <div class="nav-logo">
+    <img src="images/logo.png" alt="MRA Logo">
+</div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
